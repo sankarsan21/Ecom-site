@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'api.category',
     'api.order',
     'api.payment',
-    'api.user',
-    'api.product',
+    'api.product'
 ]
 
 MIDDLEWARE = [
@@ -135,6 +134,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+# AUTH_USER_MODEL = "user.CustomUser"
 
 
 REST_FRAMEWORK = {
