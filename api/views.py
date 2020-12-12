@@ -5,4 +5,4 @@ from django.http import JsonResponse
 
 
 def home(request):
-    return JsonResponse({'info': 'Django React Course', 'name': "hitesh"})
+    return JsonResponse({'info': 'Created by Me', 'name': "Sankarsan Pakhira"})
