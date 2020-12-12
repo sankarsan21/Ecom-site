@@ -37,7 +37,7 @@ def add(request, id, token):
 
         try:
             user = UserModel.objects.get(pk=user_id)
-        except UserModel DoesNotExist:
+        except UserModel.DoesNotExist:
             return JsonResponse({'error':'User does not exist.'})
 
         ordr = Order(product_names=products, total_amount=amount,user=user, total_product=total_pro, transaction_id=transaction_id)
